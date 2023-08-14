@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+
+  char cal;
+  int a, b;
+  printf("Enter an case (1, 2, 3, 4): ");
+  scanf("%c", &cal);
+  printf("Enter two Number: ");
+  scanf("%d %d", &a, &b);
+
+  switch (cal) {
+    case '1':
+      printf("%d + %d = %d", a, b, a + b);
+      break;
+    case '2':
+      printf("%d - %d = %d", a, b, a - b);
+      break;
+    case '3':
+      printf("%d * %d = %d", a, b, a * b);
+      break;
+    case '4':
+      printf("%d / %d = %d", a, b, a / b);
+      break;
+   
+    default:
+      printf("Error");
+  }
+
+  return 0;
+}
