@@ -1,0 +1,16 @@
+#include<stdio.h>
+int swap(int,int);
+int main(){
+    int a=20,b=30;
+    printf("a=%d, b=%d",a,b);
+    swap(a,b);
+    printf("after swapping in main a=%d,b=%d",a,b);
+}
+int swap(int a,int b){
+    int c;
+    c=a;
+    a=b;
+    b=c;
+    printf("after swapping a=%d,b=%d",a,b);
+    
+}

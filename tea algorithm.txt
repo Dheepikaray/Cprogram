@@ -1,0 +1,10 @@
+//how to make tea
+
+1.start
+2.Declare variables water,sugar,teapowder,pan.
+3.take pan and add 1 cup of water.
+4.keep it for boiling and after boiling goto step 5.
+5.add 1 tablespoon sugar and goto step 6.
+6.add some tea powder.
+7.Tea is ready
+8.stop.

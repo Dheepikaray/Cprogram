@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<string.h>
+struct name{
+    
+    int id;
+    char name[20];
+}n1;
+
+int main() {
+    
+    strcpy(n1.name,"Dheepika");
+    
+    n1.id=101;
+    
+    printf("Name: %s\n",n1.name);
+    printf("id: %d",n1.id);
+    
+    
+     return 0;
+    }

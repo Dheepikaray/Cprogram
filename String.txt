@@ -1,0 +1,17 @@
+//String print 2 types
+
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char str[]="Iam Dheepika";
+    printf("%s\n",str);
+    char str1[]={'G','o','o','d','\0'};
+    //here i<5 is size
+    for(int i=0;i<5;i++){
+        printf("%c",str1[i]);
+    }
+
+    return 0;
+}
