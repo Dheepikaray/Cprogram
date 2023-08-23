@@ -470,7 +470,7 @@ int binary(int arr[],int left,int right,int key){
 }
 
 
-//sorting
+//Bubble sort
 
 
 #include<stdio.h>
@@ -496,6 +496,59 @@ int main(){
             printf("%d ",arr[i]);
     
 }
+
+//selection sort
+
+#include<stdio.h>
+
+int main(){
+    
+   int arr[]={20,40,10,50,30,60};
+   int n=sizeof(arr)/sizeof(arr[0]);
+   
+   selectionSort(arr,n);
+   int i;
+   printf("sorted array is:");
+      for(i=0;i<n;i++)
+            printf("%d ",arr[i]);
+   
+    }
+    
+int selectionSort(int arr[],int n)
+{
+    
+    
+    int i,j,min;
+    
+    for(i=0;i<n-1;i++)
+    {
+        
+        min=i;
+        for(j=i+1;j<n;j++)
+            if(arr[j]<arr[min])
+                min=j;
+            
+        
+           if(min!=i)
+             swap(&arr[min],&arr[i]);
+            
+        
+            
+        
+    }
+}  
+
+int swap(int *a,int *b){
+    
+    int temp=*a;
+        *a=*b;
+        *b=temp;
+    
+    
+}
+    
+
+
 
 
 
