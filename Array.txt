@@ -353,6 +353,134 @@ int main()
    }
   return 0; 
 }
+
+
+//deletion in an unsorted array
+
+
+
+#include <stdio.h>
+
+int main(){
+    int i;
+    int arr[]={10,2,30,40,5,60,70};
+    int key=30;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    
+    printf("Array before deletion:");
+     for(i=0;i<n;i++)
+        printf("%d ", arr[i]);
+    
+    n = deleteElement(arr,key,n);
+    
+    
+    printf("\nArray after deletion:");
+        for( i=0;i<n;i++){
+            printf("%d ", arr[i]);
+        }
+    
+     } 
+      
+         
+int deleteElement(int arr[],int key,int n )
+{
+   int pos=linear(arr,n,key);
+   
+   if(pos==-1){
+        printf("\nelement not found");
+        
+        return n;
+   }
+   
+   int i;
+   for(i=pos;i<n-1;i++){
+       
+       arr[i]=arr[i+1];
+   }
+   return n-1;
+   
+    
+    
+    
+} 
+
+
+int linear(int arr[],int n,int key){
+    
+    int i;
+    for(i=0;i<n;i++){
+        if(arr[i]==key){
+            return i;
+        }
+    }
+    return -1;
+    
+    
+}
   
   
+
+#include <stdio.h>
+
+int main(){
+    int i;
+    int arr[]={1,2,3,8,10,20,30};
+    int key=10;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    
+    printf("Array before declaration:\n");
+     for(i=0;i<n;i++);
+        printf("%d",arr[i]);
+    
+    n = deleteElement(arr,key,n);
+    
+    
+    printf("Array after deletion:");
+        for( i=0;i<n;i++){
+            printf("%d",arr[i]);
+        }
+    
+     } 
+      
+         
+int deleteElement(int arr[],int key,int n )
+{
+   int pos=binary(arr,low,high,key)
+   
+   if(pos==-1){
+        printf("element not found");
+        
+        return n;
+   }
+   
+   int i;
+   for(i=pos;i<n-1;i++){
+       
+       arr[i]=arr[i+1];
+   }
+   return n-1;
+   
+    
+    
+    
+} 
+
+
+int binary(int arr[],int low,int high,int key){
+    
+    if(low>high)
+        return -1;
+        
+    int mid=(low+high)/2;
+    
+    if(arr[mid]==key)
+        return mid;
+        
+    if(key>arr[mid])
+        return binary(arr,(mid+1),high,key);
+        
+        return binary(arr,(mid-1),low,key);
+    
+    
+}
 
