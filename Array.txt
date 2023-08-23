@@ -129,7 +129,7 @@ int main()
    return 0;
 }
 
-//sorting
+//sorting linear search
 
 #include <stdio.h>
  
