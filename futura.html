@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Image, Dropdown, and Gradient Button</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add custom CSS for the gradient button -->
+    <style>
+        .gradient-button {
+            background: linear-gradient(to right, #ff6a00, #ee0909);
+            border: none;
+            color: #fff;
+        }
+        .navbar-brand img {
+            height: 40px; /* Adjust the height of the image as needed */
+        }
+        .arrow {
+            font-size: 1.5rem; /* Adjust the font size to make the arrow larger */
+            margin-left: 5px; /* Add some spacing between text and arrow */
+        }
+        h1 {
+             font-size: 85px;
+             font-weight: 600;
+            padding-bottom: 40px;
+            color: #fff;
+        }
+        body{
+        background-image: url("https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: 130%;
+        margin: 0px;
+        
+        }
+        h1{
+        font-size: 90px;
+        font-weight: 700;
+        padding-top: 150px;
+        color: #fff;
+        text-align: center;
+        }
+        p{
+        text-align: center;
+        font-size: 20px;
+        word-spacing: normal;
+        margin:5% 10%;
+        color: white;
+        }
+        .h{
+        background-image: linear-gradient(red,yellow);
+        padding: 20px;
+        text-decoration: none;
+        color: white; 
+        border: 0; 
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 50px;
+        cursor: pointer;
+
+        }
+        a:active{
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 2em;">
+    <a class="navbar-brand" href="#">
+        <img src="https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/futura-labs.svg" alt="Logo">
+    </a>
+    
+    
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" style="margin-right: 13em; ">
+            <li class="nav-item me-3 me-lg-0 margin">
+                <a class="nav-link text-dark" href="#" title="Home"><b>Home</b></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0 margin">
+                <a class="nav-link text-dark" href="#" title="About"><b>About</b></a>
+            </li>
+            <li class="nav-item dropdown margin">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Internship">
+                    <b>Internship</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><img src="https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/uploads/2022/07/python-icon.png" alt=""> Python-Django FullStack</a>
+                    <a class="dropdown-item" href="#"><img src="https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/uploads/2022/07/laravel-icon.png" alt=""> PHP-Laravel</a>
+                    
+                    <a class="dropdown-item" href="#"><img src="https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/uploads/2022/07/net-icon.png" alt=""> .Net</a>
+                </div>
+            </li>
+            <li class="nav-item me-3 me-lg-0 margin">
+                <a class="nav-link text-dark" href="#" title="Placements"><b>Placements</b></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0 margin">
+                <a class="nav-link text-dark" href="#" title="Careers"><b>Careers</b></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0 margin" style="margin-right: 8px;">
+                <a class="nav-link text-dark" href="#" title="Contact"><b>Contact</b></a>
+            </li>
+            <li class="nav-item">
+                <button class="btn gradient-button margin">Get In Touch <span class="arrow">&rarr;</span></button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<h1>Enable. Transform. Accelerate.</h1>
+<p><b>Be a part of FUTURA LABS, the best learning platform to transform you into a skilled and trained IT professional. We are one of Calicut's most trusted&nbsp;software training institutes, with the highest placement records. Join our hands to get your dream job and stand firm in the industry with all the confidence and proficiency.</b></p>
+<img style="display: flex;padding-left: 85em;position: fixed;" src="https://cdn-ghnlj.nitrocdn.com/JBtnaqNLUFzDSKzWbkatZJZXEwtGDlyg/assets/images/optimized/rev-c70a8bc/thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/whatsapp-icon.png" class="img-fluid" alt="...">
+<center><button class="h" style="width: 15%;;"><a href="https://thefuturalabs.com/" style="text-decoration: none;color: #fff;"><b>Get in touch &downarrow;</b></a></button>
+    <button1 class="h"><a href="https://www.w3schools.com/howto/howto_css_next_prev.asp" style="text-decoration: none; color: #f4f2f2;"><b>call:799 442 00 46 &downarrow;</b></a></button1></center>
+   
+
+<!-- Add Bootstrap JS and jQuery scripts at the end of your HTML file -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

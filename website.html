@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>www.india.gov.in</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="untitl.css">
+        <script src="https://js.stripe.com/v3/"></script>
+        <!-- JavaScript to initialize the dropdown (only if required) -->
+<script>
+    var myDropdown = new bootstrap.Dropdown(document.getElementById('iconDropdown'));
+  </script>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      </head>
+  <body>
+             
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-info navbar-dark" style="height: 100px;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#"><img src="https://www.india.gov.in/sites/upload_files/npi/files/logo_1.png" alt="Bootstrap" width="250" height="80" style="margin-left: 4em;"></a>
+
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row" style="margin-right: 140px;">
+            
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="#"><i class="fas fa-cog mx-1"></i> Services</a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="#"><i class="bi bi-bank2"></i> My Bank</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Topics
+                  </a>
+                
+                  <ul class="dropdown-menu bg-secondary-subtle">
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-seedling"></i>Agriculture</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-globe"></i> Foreign Affairs</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-tree"></i>Environment & Forest</a></li>
+                  </ul>
+        </ul>
+       <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary style" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Login
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar --><!-- This code shows the search icon fine, but send and many others do not work-->
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+    <div class="container-fluid">
+      <form class="d-flex" role="search" style=" margin-left: 10em;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav d-flex flex-row" style="margin-right: 400px;">
+            
+        <li class="nav-item me-3 me-lg-0">
+           <p class="nav-link text-white"> MOST SEARCHED</p>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+            <a href="#" style="text-decoration: none;"><p class="nav-link text-white " style="margin-left: 3em;">Birth certificate</p></a>
+        </li>
+        <li class="nav-item separator"></li>
+        <li class="nav-item dropdown">
+            <a href="#" style="text-decoration: none;"><p class="nav-link text-white ">Driving license</p></a>
+        </li>
+        <li class="nav-item separator"></li>
+        <li class="nav-item dropdown">
+            <a href="#" style="text-decoration: none;"><p class="nav-link text-white ">Pan card</p></a>
+        </li>
+            
+              
+    </ul>
+    
+    </div>
+   
+
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cbpssubscriber.mygov.in/assets/uploads/flYHd7E7b2W2XRtP?56" class="d-block w-100" alt="Carousel Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.india.gov.in/sites/upload_files/npi/files/sahkar-se-samriddhi.jpg" class="d-block w-100" alt="Carousel Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.india.gov.in/sites/upload_files/npi/files/eye-donation-fortnight.jpg" class="d-block w-100" alt="Carousel Image 3">
+        </div>
+        
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="card border-black" style="width: 18rem; height: fit-content; margin-left: 6.5em;margin-top: 5em;">
+            
+            <div class="card-body">
+              <h1>News Highlights</h1>
+              <ol style="padding-left: 3px;text-align: justify; font-size: 13px;">
+                <li1>Partnership for Global Infrastructure and Investment (PGII)...</li1><br>
+                <li1>Prime Minister's statement at the Event on Partnership for...</li1><br>
+                <li1>India-Brazil-South Africa-USA Joint Statement</li1><br>
+                <li1>Prime Minister’s meeting with Prime Minister of Italy</li1><br>
+                <li1>Prime Minister’s meeting with Prime Minister of Italy</li1>
+
+              </ol>
+            </div>
+
+            </div>
+        
+        
+        <div class="card border-black" style="width: 18rem; height: fit-content; margin-left: 12em;margin-top: 5em; ">
+            
+            <div class="card-body">
+              <h1>Information & Forms</h1>
+              <ol style="padding-left: 3px;text-align: justify; font-size: 13px;">
+                <li1>Partnership for Global Infrastructure and Investment (PGII)...</li1><br>
+                <li1>Prime Minister's statement at the Event on Partnership for...</li1><br>
+                <li1>India-Brazil-South Africa-USA Joint Statement</li1><br>
+                <li1>Prime Minister’s meeting with Prime Minister of Italy</li1><br>
+                <li1>Prime Minister’s meeting with Prime Minister of Italy</li1>
+
+              </ol>
+            </div>
+
+            </div>
+
+
+        <div class="card border-black" style="width:18em;height: fit-content; margin-left: 12em;margin-top: 5em;">
+          
+            <div class="card-body">
+              <h1>Activities</h1>
+              <div>
+                <img src="https://www.india.gov.in/sites/upload_files/npi/files/g-20-logo.jpg" class="d-block w-100" alt="Carousel Image 2">
+                <p>One Earth One Family One Future</p>
+              </div><hr>
+              <div>
+                <img src="https://www.india.gov.in/sites/upload_files/npi/files/health_id.jpg" class="d-block w-100" alt="Carousel Image 2">
+                <p>Health ID - Key to your Digital Healthcare Journey</p>
+              </div>
+
+            </div>
+            </div>
+     </div>
+</div><br><br><br>
+
+<div class="bg-primary w-100 p-3 d-inline-block" style="height: 25em;">
+
+    <table style="margin-left: 7em;" class="top">
+        <thead>
+            <tr>
+                <th><h2>Be Involved</h2></th>
+                <th><h2>Spotlight</h2></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="b"><h4>collaborate, share and influence government policy</h4></td>
+                <td class="b"><ul><li>  Amrit bharat station scheme</li></ul></td>
+                <td class="b"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="b"><p><button class="btn"><i class="bi bi-check-lg"></i><b style="margin-left: 2px;">Do</b></button>  Capture the beauty of amrit udyan reel contest</p></td>
+                <td class="b"><ul><li>Shankar se samriti scheme</li></ul></td>
+                <td class="b"><a class="nav-link text-white" href="#"><i class="fas fa-comment"></i>  Feedback</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="b"><p><button class="btn bg-info"><i class="bi bi-chat-right-text"></i><b style="margin-left: 2px;">Discuss</b></button>  Inviting Suggestions on Reforms for Strengthening for Periodic Assessment and Ac ..</p></td>
+                <td class="b"></td>
+                <td class="b"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="b"><p><button class="btn bg-white"><i class="fas fa-poll-h"></i><b style="margin-left: 2px;">poll</b></button>  Capture the beauty of amrit udyan reel contest</p></td>
+                <td class="b"><h3>Transparancy</h3></td>
+                <td class="b"><a class="nav-link text-white" href="#"><i class="fas fa-envelope"></i>  Contact</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+</div>
+
+<div style="margin-top: 5em;">
+    <a href="#" ><img style="padding-left: 13em;" src="https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/quicklinks5.png" alt="a"></a>
+    <a href="#"><img style="margin-left: 15em;" src="https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/quicklinks2.png" alt="a"></a>
+    <a href="#"><img style="margin-left: 15em;" src="https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/quicklinks3.png" alt="a"></a>
+    <a href="#"><img style="margin-left: 15em;" src="https://www.india.gov.in/sites/upload_files/npi/files/newsletter/quicklinks6.png" alt="a"></a>
+    <br>
+    <a href="#" style="text-decoration: none; padding-left: 10em;">Integrated government</a>
+    <a href="#" style="text-decoration: none; padding-left: 9em; ">Mobile APP Directory</a>
+    <a href="#" style="text-decoration: none; padding-left: 13em;">Calendar</a>
+    <a href="#" style="text-decoration: none; padding-left: 16em;">MyGov</a><hr>
+</div><br><br>
+
+
+<div style="background-color: black;">
+    <div class="container">
+        <table class="bottom">
+            <tr>
+                <td class="a"><h2>Information related</h2></td>
+                <td class="a"></td>
+                <td class="a"><h3>About the Government</h3></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td class="a"><ul type="none"><li>Agriculture</li>
+                    <li>Commerce</li>
+                    <li>Defence</li>
+                    <li>Environment & Forest</li>
+                    <li>Food</li>
+                    <li>Governence</li>
+                    <li>Housing</li>
+                    <li>Social Development</li>
+                </ul></td>
+                <td class="a"><ul type="none">
+                    <li>Art & Culture</li>
+                    <li>Communication</li>
+                    <li>Education</li>
+                    <li>Foreign Affairs</li>
+                    <li>Finance & Taxes</li>
+                    <li>Infrastructure</li>
+                    <li>Power & Energy</li>
+                </ul></td>
+                <td class="a"><ul type="none">
+                    <li>constituition of India</li>
+                    <li>government dirctory</li>
+                    <li>Indian Parliament</li>
+                    <li>Publications</li>
+                    <li>Who's who</li>
+                </ul></td>
+                <td> <img style="margin-top: 5em;" src="https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/img-ftr-open-data-portal.png" alt="Image"></td>
+                <td><img style="margin-top: 5em; margin-left: 5em;" src="https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/pib.png" alt="Image"></td>
+            </tr>
+          
+        </table>
+    </div><br><br><br>
+    <div class="container">
+      <p style="color: white; text-align: center; font-size: small; margin-left: 7em;">This Portal is a <span style="color: yellow;">Mission Mode Project</span> under the <span style="color: yellow;">National E-Governance Plan</span>, and is owned, designed and developed by <span style="color: yellow;">National Informatics Centre (NIC), Ministry of Electronics & Information Technology</span>, Government of India. The content linked through NPI is owned and maintained by the respective Ministries/Departments.</p>
+      <p style="color: white; text-align: center; font-size: small;">Last reviewed and updated on 10 Sep, 2023</p>
+    </div>
+    </div>
+
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  </body>  
+</html>
